@@ -341,7 +341,7 @@ void NumVar::DisplayValue( TextContext& Text ) const
 
 std::string NumVar::ToString( void ) const
 {
-    char buf[128];
+    char buf[12800];
     sprintf_s(buf, "%f", m_Value);
     return buf;
 } 
@@ -384,7 +384,7 @@ void ExpVar::DisplayValue( TextContext& Text ) const
 
 std::string ExpVar::ToString( void ) const
 {
-    char buf[128];
+    char buf[12800];
     sprintf_s(buf, "%f", (float)*this);
     return buf;
 } 
